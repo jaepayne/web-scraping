@@ -11,6 +11,12 @@
   <h1><%= name %></h1>
 
   <table class="table">
+    <tr>
+      <th>Created At</th>
+      <th>Amazon Price</th>
+      <th>Reseller Price</th>
+      <th>Reseller Used Price</th>
+    </tr>
     <% products.forEach(function(product) { %>
       <tr>
         <td><%=product.createdAt %></td>
