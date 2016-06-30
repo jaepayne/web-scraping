@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+    <% include nav %>
+
+<div class="container">
+  <h1><%= name %></h1>
+
+  <table class="table">
+    <% products.forEach(function(product) { %>
+      <tr>
+        <td><%=product.createdAt %></td>
+        <td><%=product.amazonPrice %></td>
+        <td><%=product.resellerNewPrice %></td>
+        <td><%=product.resellerUsedPrice %></td>
+      </tr>
+    <% }); %>
+  </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+  </head>
+  <body>
+    <% include nav %>
+    <div class="container">
+
+      <ul style="font-weight: 700" class="list-group">
+        <% products.forEach(function(product) { %>
+          <li class="list-group-item"><a href="<%= product.productId %>"><%= product.productName %></a></li>
+        <% }); %>
+      </ul>
+
+    </div>
+  </body>
+</html>
