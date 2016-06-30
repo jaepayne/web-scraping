@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      iframe{
+        min-height: 750px;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Web Scraping
+
+---
+
+# Agenda
+
+1. Lecture (20 min)
+2. Signup and Installation (10 min)
+3. Workshop (2 hrs)
+
+---
+# What is FullStack Academy
+
+- Immersive coding bootcamp
+- Fullstack javascript curriculum
+- 97% hiring rate in 3 months
+
+---
+# Upcoming Events
+1. [Information Session]() - July 6
+2. [DIY Home Security with Raspberry Pi, Twilio]() - July 12
+3. [Promises Primer]() - July 19
+
+More on our meetup!
+---
+# Web scraping
+<pre style="font-size: 0.7em;">                                            3                                          
+          ┌────────────────────────────────┐                                           
+          │                                │                                           
+          ▼                                │                                           
+┌──────────────────┐           ┌──────────────────────┐                                
+│                  │           │                      │░                               
+│     MongoDB      │           │     Web Scrapper     │──────────────┐   1             
+│                  │           │                      │░             │                 
+└──────────────────┘           └──────────────────────┘░             │                 
+                                ░░░░░░░░░░░▲░░░░░░░░░░░░             │                 
+                                           │                         │                 
+                                           │                         │                 
+                                           │                         │                 
+                                           │                         ▼                 
+                                           │        ┌─────────────────────────────────┐
+                                           │        │                                 │
+                                           └────────│           amazon.com            │
+                                         2          │                                 │
+                                                    └─────────────────────────────────┘
+</pre>
+
+
+---
+# HTTP
+
+- What is a protocol
+- Clients
+- Servers
+
+---
+# Requests
+<img src="./request.png" style="width:100%">
+---
+
+# Responses
+<img src="./response.png" style="width:100%">
+---
+# Making Requests in Node.js
+<div id="my-element" style="min-height: 100%;">
+var request = require('request');
+</div>
+---
+# Cheerio.js
+<div id="cheerio-example">
+
+</div> 
+---
+# Signup
+Follow this link to our [platform](https://learn.fullstackacademy.com/signup?cohort=577582b3fe90510300a90f2a)
+---
+
+      
+
+    </textarea>
+    
+
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+      
+    </script>
+    <script data-element-id="my-element" src="https://embed.tonicdev.com"></script>
+    <script>
+      
+      Tonic.createNotebook({
+        element: document.getElementById('cheerio-example'),
+        source: `var cheerio = require('cheerio');
+var html = '<div><ul><li><a href="http://google.com">Google</a></li><li><a href="http://fullstackacademy.com"></a></li></ul></div>';`
+      });
+    </script>
+  </body>
+</html> 
