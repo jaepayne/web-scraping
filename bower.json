@@ -1,0 +1,17 @@
+{
+  "name": "zekenierenberg",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Zeke Nierenberg <hampzan09@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/FullstackAcademy/web-scraping",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
