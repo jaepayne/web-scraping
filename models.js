@@ -1,3 +1,5 @@
+//I am changing this for a github example 3/8/2018
+
 const mongoose = require('mongoose');
 mongoose.Promise = Promise;
 mongoose.connect('mongodb://localhost/amazonPrice');
